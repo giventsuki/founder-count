@@ -2,7 +2,7 @@ const founderInput = document.querySelector(".founder-input");
 const founderButton = document.querySelector(".founder-button");
 
 const history = document.querySelector(".history");
-let randomNumber = Math.floor(Math.random() * 10000);
+let randomNumber = Math.floor(Math.random() * 100);
 let attemps = 1;
 alert('Число загадано. Введите свои догадки и нажмите на кнопку. Удачи!')
 founderButton.addEventListener("click", () => {
@@ -35,7 +35,7 @@ founderButton.addEventListener("click", () => {
     );
     const restart = prompt("Хотите начать заново? (да/нет)");
     if (restart.toLowerCase() == "да") {
-      randomNumber = Math.floor(Math.random() * 10000);
+      randomNumber = Math.floor(Math.random() * 100);
       attempts = 1;
     } else {
       alert("Игра завершена");
