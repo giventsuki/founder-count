@@ -18,7 +18,7 @@ founderButton.addEventListener("click", () => {
       const restart = prompt("Хотите начать заново? (да/нет)");
       if (restart.toLowerCase() == "да") {
         alert('Число загадано. Введите свои догадки и нажмите на кнопку. Удачи!')
-        randomNumber = Math.floor(Math.random() * 1000);
+        randomNumber = Math.floor(Math.random() * 100);
         attempts = 1;
       } else {
         alert("Игра завершена");
